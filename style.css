@@ -1,0 +1,40 @@
+body{
+  background-color: black;
+}
+
+
+
+h1{
+
+  text-align: center;
+  border: 3px solid red;
+  color: red; font-style: italic;     font-size: 40px;
+  padding: 15px;
+}
+
+
+
+h2{
+  color: blue;
+  text-align: center;
+  font-size: 25px;
+  border: 2px solid green;
+  margin-top: 5px
+    
+}
+
+
+
+
+p1,p2,p3{
+  color: White;
+  font-size: 20px;
+}
+
+
+
+
+#img {
+  border-radius: 50%;
+  margin: 0 auto;
+}
