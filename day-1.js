@@ -2,9 +2,9 @@
 // Use Map to increment all numbers in the array (arr) by 1
 let arr = [1, 2, 3, 4, 5, 6];
 
-let newArr = arr.map(function(nums){
-  return nums + 1
-})
+let newArr = arr.map(function (nums) {
+  return nums + 1;
+});
 
 console.assert(JSON.stringify(newArr) == JSON.stringify([2, 3, 4, 5, 6, 7]));
 
@@ -12,9 +12,9 @@ console.assert(JSON.stringify(newArr) == JSON.stringify([2, 3, 4, 5, 6, 7]));
 // Use Filter to find all even numbers in an array
 let arr2 = [1, 2, 3, 4, 5, 6];
 
-let evenNums = arr2.filter(function(nums){
-  return nums % 2 === 0
-})
+let evenNums = arr2.filter(function (nums) {
+  return nums % 2 === 0;
+});
 
 console.assert(JSON.stringify(evenNums) == JSON.stringify([2, 4, 6]));
 
@@ -22,12 +22,9 @@ console.assert(JSON.stringify(evenNums) == JSON.stringify([2, 4, 6]));
 // Use Filter to find strings that are longer than 3 letter in the array (animals)
 let animals = ["cow", "rabbit", "dog", "cat"];
 
-
-let longerThanThree = animals.filter(function(obj){
-    return obj.length > 3
-})
-
-
+let longerThanThree = animals.filter(function (obj) {
+  return obj.length > 3;
+});
 
 console.assert(JSON.stringify(longerThanThree) == JSON.stringify(["rabbit"]));
 
@@ -38,14 +35,11 @@ let fruits = [
   { name: "cherry", color: "red" },
   { name: "grape", color: "purple" },
   { name: "watermelon", color: "green" },
-]
+];
 
-
-let filtered = fruits.filter(function(item){
-  if (!item.name.includes("cherry"))
-    return item;
-})
-
+let filtered = fruits.filter(function (item) {
+  if (!item.name.includes("cherry")) return item;
+});
 
 console.assert(
   JSON.stringify(filtered) ==
